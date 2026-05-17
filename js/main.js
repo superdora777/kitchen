@@ -1,5 +1,5 @@
 const swiper = new Swiper(".foodSwiper", {
-  loop: true,
+  loop: false,
   slidesPerView: 1,
   spaceBetween: 20,
   pagination: {
@@ -41,13 +41,19 @@ form.addEventListener("submit", (e) => {
   setTimeout(() => {
     modal.classList.remove("hidden");
     button.disabled = false;
-    button.textContent = "Забронировать";
+    button.textContent = "Отправить";
     form.reset();
   }, 1500);
 });
 
 closeModal.addEventListener("click", () => {
   modal.classList.add("hidden");
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    modal.classList.add("hidden");
+  }
 });
 
 // Закрытие по фону

@@ -28,14 +28,14 @@
         <div class="main_container">
           <div class="header">
             <a class="header__logo" href="#">
-              <img src="img/logo.png" alt="logo" class="logo" />
+              <img src="img/logo.png" alt="логотип" class="logo" />
               <p class="ml-[13px]">Уютная</p>
               <p class="ml-[9px] md:ml-[13px] text-[#C45C3E]">кухня</p>
             </a>
-            <div class="header__menu">
+            <nav class="header__menu">
               <a href="#" class="mr-[18px] md:mr-[24px] text-[#5C5248]">Меню</a>
               <a href="#footer" class="text-[#C45C3E]">К бронированию</a>
-            </div>
+            </nav>
           </div>
         </div>
       </div>
@@ -45,14 +45,14 @@
         <div class="main_container">
           <img
             src="img/heroMobile.png"
-            alt="hero"
-            class="block md:hidden mb-[14px] object-cover"
+            alt="Интерьер кафе Уютная кухня"
+            class="block md:hidden mb-[14px] object-cover rounded-[20px] w-full"
           />
 
           <img
             src="img/heroImg.png"
-            alt="hero"
-            class="hidden md:block mb-[20px] object-cover"
+            alt="Интерьер кафе Уютная кухня"
+            class="hidden md:block mb-[20px] object-cover rounded-[20px] w-full"
           />
           <h1
             class="font-bold text-[24px] mb-[14px] md:text-[34px] md:mb-[20px]"
@@ -82,37 +82,37 @@
             <div class="swiper foodSwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="img/1.png" alt="" class="sliderImg" />
+                  <img src="img/1.png" alt="еда" class="sliderImg" />
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="img/2.png" alt="" />
+                  <img src="img/2.png" alt="кофе" />
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="img/3.png" alt="" />
+                  <img src="img/3.png" alt="десерт" />
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="img/4.png" alt="" />
+                  <img src="img/4.png" alt="интерьер" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/5.png" alt="" />
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="img/6.png" alt="" />
+                  <img src="img/5.png" alt="еда" />
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="img/7.png" alt="" />
+                  <img src="img/6.png" alt="еда" />
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="img/8.png" alt="" />
+                  <img src="img/7.png" alt="еда" />
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/8.png" alt="напитки" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/9.png" alt="" />
+                  <img src="img/9.png" alt="еда" />
                 </div>
               </div>
             </div>
@@ -123,23 +123,23 @@
       </section>
       <section id="questionSection">
         <div class="main_container">
-          <h1
+          <h2
             class="font-bold text-[20px] mb-[12px] md:text-[24px] md:mb-[16px]"
           >
             Частые вопросы
-          </h1>
+          </h2>
           <div class="question">
-            <details class="questionItem" close>
+            <details class="questionItem">
               <summary>Часы работы</summary>
               <p>Пн–Чт 10:00–22:00 · Пт–Сб 10:00–23:00 · Вс 11:00–21:00</p>
             </details>
 
-            <details class="questionItem" close>
+            <details class="questionItem">
               <summary>Как добраться</summary>
               <p>м. Тверская, 5 минут пешком. Вход со двора, домофон 42.</p>
             </details>
 
-            <details class="questionItem" close>
+            <details class="questionItem">
               <summary>Детям и особые пожелания</summary>
               <p>
                 Детское меню и стульчики. Сообщите об аллергиях в форме
@@ -149,51 +149,51 @@
           </div>
         </div>
       </section>
-      <footer id="footer">
-        <div class="main_container">
-          <div class="form">
-            <h1
-              class="font-bold text-[20px] mb-[14px] md:text-[24px] md:mb-[18px]"
-            >
-              Бронирование стола
-            </h1>
-            <p
-              class="text-[#5C5248] text-[13px] mb-[14px] md:text-[14px] md:mb-[18px]"
-            >
-              Заполните поля — перезвоним для подтверждения.
-            </p>
-            <form class="contactForm" id="bookingForm">
-              <div class="formGroup">
-                <label for="name">Имя </label>
-                <input type="text" id="name" required />
-              </div>
-              <div class="formGroup">
-                <label for="lastName">Фамилия </label>
-                <input type="text" id="lastName" required />
-              </div>
-              <div class="formGroup">
-                <label for="email">Email </label>
-                <input type="email" id="email" required />
-              </div>
-              <div class="formGroup">
-                <label for="phone">Телефон </label>
-                <input
-                  type="number"
-                  id="phone"
-                  required
-                  pattern="[0-9+()-\s]+"
-                  title="Введите корректный номер телефона"
-                />
-              </div>
-              <button type="submit" class="buttonFrom">Отправить</button>
-            </form>
-          </div>
-        </div>
-      </footer>
     </main>
-    <div id="successModal" class="modal hidden">
+    <footer id="footer">
+      <div class="main_container">
+        <div class="form">
+          <h2
+            class="font-bold text-[20px] mb-[14px] md:text-[24px] md:mb-[18px]"
+          >
+            Бронирование стола
+          </h2>
+          <p
+            class="text-[#5C5248] text-[13px] mb-[14px] md:text-[14px] md:mb-[18px]"
+          >
+            Заполните поля — перезвоним для подтверждения.
+          </p>
+          <form class="contactForm" id="bookingForm">
+            <div class="formGroup">
+              <label for="name">Имя </label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="formGroup">
+              <label for="lastName">Фамилия </label>
+              <input type="text" id="lastName" required />
+            </div>
+            <div class="formGroup">
+              <label for="email">Email </label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="formGroup">
+              <label for="phone">Телефон </label>
+              <input
+                type="tel"
+                id="phone"
+                required
+                pattern="[0-9+()\-\s]+"
+                title="Введите корректный номер телефона"
+              />
+            </div>
+            <button type="submit" class="buttonFrom">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <div id="successModal" class="modal hidden" role="dialog" aria-modal="true">
       <div class="modalContent">
-        <h1>Заявка отправлена</h1>
+        <h2>Заявка отправлена</h2>
         <p
           class="text-[#5C5248] text-[14px] mb-[14px] md:text-[15px] md:mb-[18px]"
         >
