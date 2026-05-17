@@ -1,0 +1,260 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #2c2416;
+  font-style: normal;
+  line-height: 25px;
+  background-color: #faf6f1;
+}
+p {
+  margin: 0;
+}
+
+.main_container {
+  width: 864px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 30px;
+  height: 37px;
+}
+
+.header {
+  margin: 48px 0 40px 4px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15px;
+}
+
+.heroButton {
+  width: 221px;
+  height: 47px;
+  border-radius: 8px;
+  background-color: #c45c3e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+.sliderBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foodSwiper {
+  width: 764px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.foodSwiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 180px !important;
+}
+
+.foodSwiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static !important;
+
+  width: 40px !important;
+  height: 40px !important;
+
+  background: white;
+  border: 1px solid #e0d8ce;
+  border-radius: 20px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 24px !important;
+  color: #000;
+}
+
+.swiper-pagination {
+  position: static !important;
+  margin-bottom: 40px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #c45c3e !important;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 40px;
+}
+
+.questionItem {
+  border-radius: 14px;
+  overflow: hidden;
+  background: #e0d8ce;
+}
+
+.questionItem summary {
+  list-style: none;
+  cursor: pointer;
+  border: 1px solid #e0d8ce;
+
+  border-radius: 14px;
+  background: #fff;
+  padding: 16px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.questionItem summary::-webkit-details-marker {
+  display: none;
+}
+
+.questionItem summary::after {
+  content: "+";
+  font-size: 15px;
+  font-weight: 600;
+}
+.questionItem[open] summary {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.questionItem[open] summary::after {
+  content: "-";
+}
+
+.questionItem p {
+  padding: 12px 16px 16px 16px;
+  margin: 0;
+  background-color: #f3ede6;
+  font-size: 14px;
+  color: #5c5248;
+}
+
+.form {
+  background-color: #fff;
+  margin-bottom: 48px;
+  border-radius: 12px;
+  border: 1px solid #e0d8ce;
+  padding: 28px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.formGroup input {
+  height: 44px;
+  border: 1px solid #d4ccc2;
+  border-radius: 6px;
+  padding: 5px 16px;
+  font-size: 14px;
+  background: white;
+  outline: none;
+  margin-bottom: 18px;
+}
+
+.formGroup input:focus {
+  border-color: #c45c3e;
+}
+
+.buttonFrom {
+  width: 151px;
+  height: 47px;
+  border-radius: 8px;
+  background-color: #5c6b4a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+.modalContent {
+  width: 440px;
+  background: white;
+  border-radius: 12px;
+  padding: 32px 51px;
+  text-align: center;
+}
+
+.modalContent h1 {
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.modalContent button {
+  width: 118px;
+  height: 42px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: #e8dfd4;
+}

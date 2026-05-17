@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Уютная кухня</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobileStyle.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="header-area">
+      <div id="header-sticky" class="menu-area">
+        <div class="main_container">
+          <div class="header">
+            <a class="header__logo" href="#">
+              <img src="img/logo.png" alt="logo" class="logo" />
+              <p class="ml-[13px]">Уютная</p>
+              <p class="ml-[9px] md:ml-[13px] text-[#C45C3E]">кухня</p>
+            </a>
+            <div class="header__menu">
+              <a href="#" class="mr-[18px] md:mr-[24px] text-[#5C5248]">Меню</a>
+              <a href="#footer" class="text-[#C45C3E]">К бронированию</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="heroSection">
+        <div class="main_container">
+          <img
+            src="img/heroMobile.png"
+            alt="hero"
+            class="block md:hidden mb-[14px] object-cover"
+          />
+
+          <img
+            src="img/heroImg.png"
+            alt="hero"
+            class="hidden md:block mb-[20px] object-cover"
+          />
+          <h1
+            class="font-bold text-[24px] mb-[14px] md:text-[34px] md:mb-[20px]"
+          >
+            Домашняя кухня в центре города
+          </h1>
+          <p
+            class="text-[15px] mb-[14px] text-[#5C5248] md:text-[17px] md:mb-[20px]"
+          >
+            Бронируйте стол онлайн — мы подготовим всё к вашему приходу.
+          </p>
+          <button class="heroButton" id="scrollToFooter">
+            Забронировать стол
+          </button>
+          <div class="heroText">
+            <p class="text-[#5C5248] md:mr-[6px]">Нравится атмосфера?</p>
+            <a href="#footer" class="text-[#C45C3E]"
+              >перейти к форме бронирования</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="sliderSection">
+        <div class="main_container">
+          <div class="sliderBox">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper foodSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/1.png" alt="" class="sliderImg" />
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/2.png" alt="" />
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/3.png" alt="" />
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/4.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/5.png" alt="" />
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/6.png" alt="" />
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/7.png" alt="" />
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/8.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/9.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section id="questionSection">
+        <div class="main_container">
+          <h1
+            class="font-bold text-[20px] mb-[12px] md:text-[24px] md:mb-[16px]"
+          >
+            Частые вопросы
+          </h1>
+          <div class="question">
+            <details class="questionItem" close>
+              <summary>Часы работы</summary>
+              <p>Пн–Чт 10:00–22:00 · Пт–Сб 10:00–23:00 · Вс 11:00–21:00</p>
+            </details>
+
+            <details class="questionItem" close>
+              <summary>Как добраться</summary>
+              <p>м. Тверская, 5 минут пешком. Вход со двора, домофон 42.</p>
+            </details>
+
+            <details class="questionItem" close>
+              <summary>Детям и особые пожелания</summary>
+              <p>
+                Детское меню и стульчики. Сообщите об аллергиях в форме
+                бронирования.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="main_container">
+          <div class="form">
+            <h1
+              class="font-bold text-[20px] mb-[14px] md:text-[24px] md:mb-[18px]"
+            >
+              Бронирование стола
+            </h1>
+            <p
+              class="text-[#5C5248] text-[13px] mb-[14px] md:text-[14px] md:mb-[18px]"
+            >
+              Заполните поля — перезвоним для подтверждения.
+            </p>
+            <form class="contactForm" id="bookingForm">
+              <div class="formGroup">
+                <label for="name">Имя </label>
+                <input type="text" id="name" required />
+              </div>
+              <div class="formGroup">
+                <label for="lastName">Фамилия </label>
+                <input type="text" id="lastName" required />
+              </div>
+              <div class="formGroup">
+                <label for="email">Email </label>
+                <input type="email" id="email" required />
+              </div>
+              <div class="formGroup">
+                <label for="phone">Телефон </label>
+                <input
+                  type="number"
+                  id="phone"
+                  required
+                  pattern="[0-9+()-\s]+"
+                  title="Введите корректный номер телефона"
+                />
+              </div>
+              <button type="submit" class="buttonFrom">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <div id="successModal" class="modal hidden">
+      <div class="modalContent">
+        <h1>Заявка отправлена</h1>
+        <p
+          class="text-[#5C5248] text-[14px] mb-[14px] md:text-[15px] md:mb-[18px]"
+        >
+          Спасибо! Мы свяжемся с Вами в ближайшее время для подтверждения брони.
+        </p>
+        <button id="closeModal">Закрыть</button>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
